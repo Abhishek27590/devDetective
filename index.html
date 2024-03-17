@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="wrapper">
+        <div class="head-div">
+            <h1>DevDetective</h1>
+            <div light-mode>
+                <p text-col>LIGHT</p>
+                <i class="fa-solid fa-sun active" sun-img></i>
+                <i class="fa-solid fa-moon" moon-img></i>
+            </div>
+        </div>
+        <div class="search-bar">
+            <div class="div1">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Enter a GitHub username..." data-input>
+                <i class="fa-solid fa-x" data-clear></i>
+            </div>
+            <button submit-button>Search</button>
+        </div>
+        
+        <div class="profile-sec">
+            <div class="name-img">
+                <img data-image>
+                <div class="wrap">
+                    <div class="bio">
+                        <p data-name></p>
+                        <a href="" data-gitlink></a>
+                    </div>
+                    <p class="date-joined" data-datejoined></p>
+                </div>
+            </div>
+            <div class="bio-wrap"><p data-bio class="p-wrap"></p></div>
+            
+
+            <div class="repo-follower">
+                <div>
+                    <p>Repos</p>
+                    <p class="details" data-repos></p>
+                </div>
+                <div>
+                    <p>Followers</p>
+                    <p class="details" data-followers></p>
+                </div>
+                <div>
+                    <p>Following</p>
+                    <p class="details" data-following></p>
+                </div>
+            </div>
+
+            <div class="more-details">
+                <div class="local">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p data-location></p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-link"></i>
+                    <a href="#" data-link>Not Available</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <a href="#" twitter-link>Not Available</a>
+                </div>
+                <div class="work">
+                    <i class="fa-solid fa-building"></i>
+                    <p data-work></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/cd319faf72.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
